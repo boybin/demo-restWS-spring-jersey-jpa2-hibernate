@@ -9,11 +9,11 @@
 	<description>Example of building REST web services with spring, jersey and jpa2/hibernate</description>
 
 	<properties>
-		<spring.version>3.2.6.RELEASE</spring.version>
-		<hibernate.version>4.2.7.Final</hibernate.version>
-		<jetty.version>9.0.7.v20131107</jetty.version> <!-- Adapt this to a version found on http://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-maven-plugin/ -->
-		<logback.version>1.1.1</logback.version>
-		<jcloverslf4j.version>1.7.6</jcloverslf4j.version>
+		<spring.version>4.2.6.RELEASE</spring.version>
+		<hibernate.version>5.1.0.Final</hibernate.version>
+		<jetty.version>9.3.8.v20160314</jetty.version> <!-- Adapt this to a version found on http://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-maven-plugin/ -->
+		<logback.version>1.1.7</logback.version>
+		<jcloverslf4j.version>1.7.21</jcloverslf4j.version>
 	</properties>
 
 	<repositories>
@@ -29,7 +29,7 @@
 		<dependency>
 			<groupId>org.glassfish.jersey.ext</groupId>
 			<artifactId>jersey-spring3</artifactId>
-			<version>2.4.1</version>
+			<version>2.22.2</version>
 			<exclusions>
 				<exclusion>
 					<groupId>org.springframework</groupId>
@@ -48,7 +48,7 @@
 		<dependency>
 			<groupId>org.glassfish.jersey.media</groupId>
 			<artifactId>jersey-media-json-jackson</artifactId>
-			<version>2.4.1</version>
+			<version>2.22.2</version>
 		</dependency>
 
 		<!-- Spring 3 dependencies -->
@@ -97,7 +97,7 @@
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<version>5.1.27</version>
+			<version>6.0.2</version>
 			<scope>provided</scope>
 		</dependency>
 
@@ -105,7 +105,7 @@
 		<dependency>
 			<groupId>org.apache.tomcat</groupId>
 			<artifactId>tomcat-jdbc</artifactId>
-			<version>7.0.35</version>
+			<version>8.5.2</version>
 			<scope>provided</scope>
 		</dependency>
 
@@ -131,7 +131,7 @@
 		<dependency>
 			<groupId>org.glassfish.jersey.core</groupId>
 			<artifactId>jersey-client</artifactId>
-			<version>2.4.1</version>			
+			<version>2.22.2</version>			
 		</dependency>		
 		<dependency>
 			<groupId>commons-dbcp</groupId>
@@ -154,7 +154,7 @@
 		<dependency>
 			<groupId>com.jayway.restassured</groupId>
 			<artifactId>rest-assured</artifactId>
-			<version>2.1.0</version>
+			<version>2.9.0</version>
 			<exclusions>
 				<!-- Exclude Groovy because of classpath issue -->
 				<exclusion>
@@ -167,7 +167,7 @@
 		<dependency>
 			<groupId>org.glassfish.jersey.test-framework.providers</groupId>
 			<artifactId>jersey-test-framework-provider-external</artifactId>
-			<version>2.5.1</version>
+			<version>2.22.2</version>
 		</dependency>
 		
 		<!-- LogBack dependencies --> 
