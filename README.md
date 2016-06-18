@@ -1,4 +1,4 @@
-demo-restWS-spring-jersey-jpa2-hibernate
+jersey-spring-hibernate
 ========================================
 Prerequisites:
 --
